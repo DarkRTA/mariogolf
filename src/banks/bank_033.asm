@@ -2687,7 +2687,7 @@ jr_033_4e1c:
     ld hl, $c2a0                                  ; $4e36: $21 $a0 $c2
     ld de, $c466                                  ; $4e39: $11 $66 $c4
     ld bc, $0004                                  ; $4e3c: $01 $04 $00
-    call Call_000_03d3                            ; $4e3f: $cd $d3 $03
+    call MemCopy                            ; $4e3f: $cd $d3 $03
     ld a, [$c2a4]                                 ; $4e42: $fa $a4 $c2
     ld [$c465], a                                 ; $4e45: $ea $65 $c4
     ret                                           ; $4e48: $c9
@@ -9072,7 +9072,7 @@ jr_033_6f77:
     ld hl, $c2a0                                  ; $6fa6: $21 $a0 $c2
     ld de, $c466                                  ; $6fa9: $11 $66 $c4
     ld bc, $0004                                  ; $6fac: $01 $04 $00
-    call Call_000_03d3                            ; $6faf: $cd $d3 $03
+    call MemCopy                            ; $6faf: $cd $d3 $03
     ld a, [$c2a4]                                 ; $6fb2: $fa $a4 $c2
     ld [$c465], a                                 ; $6fb5: $ea $65 $c4
 
@@ -11476,7 +11476,7 @@ jr_033_7b9b:
     ld hl, $c2a0                                  ; $7bca: $21 $a0 $c2
     ld de, $c466                                  ; $7bcd: $11 $66 $c4
     ld bc, $0004                                  ; $7bd0: $01 $04 $00
-    call Call_000_03d3                            ; $7bd3: $cd $d3 $03
+    call MemCopy                            ; $7bd3: $cd $d3 $03
     ld a, [$c2a4]                                 ; $7bd6: $fa $a4 $c2
     ld [$c465], a                                 ; $7bd9: $ea $65 $c4
 
@@ -11773,7 +11773,7 @@ jr_033_7d50:
     ld hl, $c2a0                                  ; $7d53: $21 $a0 $c2
     ld de, $c466                                  ; $7d56: $11 $66 $c4
     ld bc, $0004                                  ; $7d59: $01 $04 $00
-    call Call_000_03d3                            ; $7d5c: $cd $d3 $03
+    call MemCopy                            ; $7d5c: $cd $d3 $03
     ld a, [$c2a4]                                 ; $7d5f: $fa $a4 $c2
     ld [$c465], a                                 ; $7d62: $ea $65 $c4
 

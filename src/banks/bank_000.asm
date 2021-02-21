@@ -1013,7 +1013,7 @@ Call_000_0221:
     ld a, [hl+]                                   ; $0226: $2a
     ld h, [hl]                                    ; $0227: $66
     ld l, a                                       ; $0228: $6f
-    call Call_000_03d3                            ; $0229: $cd $d3 $03
+    call MemCopy                            ; $0229: $cd $d3 $03
     pop af                                        ; $022c: $f1
 
 Call_000_022d:
@@ -1524,11 +1524,11 @@ Call_000_03cf:
     ret                                           ; $03d2: $c9
 
 
-Call_000_03d3:
+MemCopy: ; copy bc bytes from *hl to *de in the forward direction
     inc c                                         ; $03d3: $0c
     dec c                                         ; $03d4: $0d
 
-Call_000_03d5:
+Call_000_03d5: ; this looks like an accidental xref from data
     jr z, jr_000_03d8                             ; $03d5: $28 $01
 
     inc b                                         ; $03d7: $04
@@ -2345,7 +2345,7 @@ Call_000_0655:
 
 Jump_000_0661:
     push af                                       ; $0661: $f5
-    call Call_000_03d3                            ; $0662: $cd $d3 $03
+    call MemCopy                            ; $0662: $cd $d3 $03
     pop af                                        ; $0665: $f1
     ldh [$95], a                                  ; $0666: $e0 $95
     ld [$2000], a                                 ; $0668: $ea $00 $20

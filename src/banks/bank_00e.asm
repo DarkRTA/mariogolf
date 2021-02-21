@@ -1346,7 +1346,7 @@ jr_00e_4623:
     push bc                                       ; $4623: $c5
     ld hl, $c800                                  ; $4624: $21 $00 $c8
     ld bc, $000b                                  ; $4627: $01 $0b $00
-    call Call_000_03d3                            ; $462a: $cd $d3 $03
+    call MemCopy                            ; $462a: $cd $d3 $03
     pop bc                                        ; $462d: $c1
 
 jr_00e_462e:
@@ -4448,7 +4448,7 @@ Call_00e_5448:
     ld hl, $d800                                  ; $5451: $21 $00 $d8
     ld de, $c600                                  ; $5454: $11 $00 $c6
     ld bc, $0074                                  ; $5457: $01 $74 $00
-    call Call_000_03d3                            ; $545a: $cd $d3 $03
+    call MemCopy                            ; $545a: $cd $d3 $03
     ld hl, $c600                                  ; $545d: $21 $00 $c6
     call Call_00e_53a6                            ; $5460: $cd $a6 $53
     ld hl, $c600                                  ; $5463: $21 $00 $c6

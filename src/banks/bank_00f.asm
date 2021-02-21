@@ -298,7 +298,7 @@ Call_00f_426b:
     ld hl, $c601                                  ; $426b: $21 $01 $c6
     ld de, $c600                                  ; $426e: $11 $00 $c6
     ld bc, $01ff                                  ; $4271: $01 $ff $01
-    call Call_000_03d3                            ; $4274: $cd $d3 $03
+    call MemCopy                            ; $4274: $cd $d3 $03
     ret                                           ; $4277: $c9
 
 

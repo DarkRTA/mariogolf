@@ -11933,7 +11933,7 @@ jr_035_7c94:
     ld hl, $c2a0                                  ; $7c97: $21 $a0 $c2
     ld de, $c466                                  ; $7c9a: $11 $66 $c4
     ld bc, $0004                                  ; $7c9d: $01 $04 $00
-    call Call_000_03d3                            ; $7ca0: $cd $d3 $03
+    call MemCopy                            ; $7ca0: $cd $d3 $03
     ld a, [$c2a4]                                 ; $7ca3: $fa $a4 $c2
     ld [$c465], a                                 ; $7ca6: $ea $65 $c4
 

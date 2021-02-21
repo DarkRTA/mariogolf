@@ -15671,7 +15671,7 @@ jr_01c_796c:
     db $11, $80, $d8, $01, $20, $00
 
 jr_01c_7b47:
-    call Call_000_03d3                            ; $7b47: $cd $d3 $03
+    call MemCopy                            ; $7b47: $cd $d3 $03
     pop hl                                        ; $7b4a: $e1
     pop de                                        ; $7b4b: $d1
     pop bc                                        ; $7b4c: $c1

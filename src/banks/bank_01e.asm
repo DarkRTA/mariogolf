@@ -11650,7 +11650,7 @@ jr_01e_6b7a:
     ld bc, $0020                                  ; $6b7d: $01 $20 $00
 
 jr_01e_6b80:
-    call Call_000_03d3                            ; $6b80: $cd $d3 $03
+    call MemCopy                            ; $6b80: $cd $d3 $03
     pop hl                                        ; $6b83: $e1
     pop de                                        ; $6b84: $d1
     pop bc                                        ; $6b85: $c1

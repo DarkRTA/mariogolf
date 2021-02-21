@@ -297,7 +297,7 @@ Call_00d_4267:
     ld hl, $c601                                  ; $4267: $21 $01 $c6
     ld de, $c600                                  ; $426a: $11 $00 $c6
     ld bc, $01ff                                  ; $426d: $01 $ff $01
-    call Call_000_03d3                            ; $4270: $cd $d3 $03
+    call MemCopy                            ; $4270: $cd $d3 $03
     ret                                           ; $4273: $c9
 
 

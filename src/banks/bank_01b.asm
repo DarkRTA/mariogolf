@@ -15707,7 +15707,7 @@ jr_01b_7b78:
     ld bc, $0020                                  ; $7b7b: $01 $20 $00
 
 jr_01b_7b7e:
-    call Call_000_03d3                            ; $7b7e: $cd $d3 $03
+    call MemCopy                            ; $7b7e: $cd $d3 $03
     pop hl                                        ; $7b81: $e1
     pop de                                        ; $7b82: $d1
     pop bc                                        ; $7b83: $c1
